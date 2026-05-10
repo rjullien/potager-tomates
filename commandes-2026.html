@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🛒 Commandes 2026 — Tomates de Charme</title>
+  <style>
+    :root {
+      --bg: #fefcf3;
+      --card-bg: #ffffff;
+      --text: #2d2d2d;
+      --accent: #e65100;
+      --accent2: #27ae60;
+      --muted: #7f8c8d;
+      --border: #ecf0f1;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #e65100 0%, #ff8f00 50%, #ffca28 100%);
+      color: white;
+      text-align: center;
+      padding: 2.5rem 1rem;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 2.2rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    header p {
+      font-size: 1rem;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 1.5rem 3rem;
+    }
+    .source-info {
+      text-align: center;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      background: #fff3e0;
+      border-radius: 8px;
+      border: 1px solid #ffcc80;
+    }
+    .source-info a {
+      color: var(--accent);
+      font-weight: bold;
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+      margin-bottom: 2rem;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 250px 1fr;
+    }
+    .card-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .card-body {
+      padding: 1.5rem;
+    }
+    .card-body h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.5rem;
+      color: var(--accent);
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.8rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .desc {
+      margin: 0.8rem 0;
+      font-size: 0.95rem;
+    }
+    .tag {
+      display: inline-block;
+      background: #e8f5e9;
+      color: #2e7d32;
+      padding: 0.2rem 0.6rem;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: bold;
+      margin-top: 0.5rem;
+    }
+    .link {
+      margin-top: 0.8rem;
+    }
+    .link a {
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .link a:hover {
+      text-decoration: underline;
+    }
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 2rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .back-link:hover { text-decoration: underline; }
+    @media (max-width: 600px) {
+      .card { grid-template-columns: 1fr; }
+      .card-img img { height: 200px; }
+      header h1 { font-size: 1.6rem; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>🛒 Commandes 2026</h1>
+    <p>Variétés à commander pour la saison prochaine</p>
+  </header>
+
+  <div class="container">
+    <div class="source-info">
+      🏪 Fournisseur : <a href="https://www.tomatedecharme.com" target="_blank" rel="noopener">Tomate de Charme</a>
+    </div>
+
+    <!-- TURBOREACTIVNYY -->
+    <div class="card" id="turboreactivnyy">
+      <div class="card-img">
+        <img src="images/turboreactivnyy.jpg" alt="Turboreactivnyy" loading="lazy">
+      </div>
+      <div class="card-body">
+        <h2>🚀 Turboreactivnyy</h2>
+        <div class="meta">
+          <span>📐 Petite à moyenne, ronde</span>
+          <span>🎨 Rouge</span>
+        </div>
+        <div class="meta">
+          <span>⏱️ Ultra précoce</span>
+          <span>🌱 Déterminé</span>
+          <span>🌍 Russie</span>
+        </div>
+        <p class="desc">Variété russe ultra précoce. Idéale pour les saisons courtes ou pour avoir des tomates très tôt en saison. Plant compact de type déterminé.</p>
+        <span class="tag">⚡ ULTRA PRÉCOCE</span>
+        <div class="link">🔗 <a href="https://www.tomatedecharme.com/product-page/turboreactivnyy" target="_blank" rel="noopener">Voir sur Tomate de Charme</a></div>
+      </div>
+    </div>
+
+    <a href="index.html" class="back-link">← Retour aux fiches variétés</a>
+  </div>
+</body>
+</html>
