@@ -1,0 +1,10 @@
+title: "🍅 Les Tomates de Roquefort"
+description: "Collection de tomates anciennes du jardin de Roquefort-les-Pins"
+baseurl: "/potager-tomates"
+url: "https://rjullien.github.io"
+theme: minima
+markdown: kramdown
+
+# Build settings
+plugins:
+  - jekyll-seo-tag

@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>🍅 Les Tomates de Roquefort-les-Pins</title>
+  <meta name="description" content="Collection de tomates anciennes cultivées à Roquefort-les-Pins (06)">
+  <style>
+    :root {
+      --bg: #fefcf3;
+      --card-bg: #ffffff;
+      --text: #2d2d2d;
+      --accent: #c0392b;
+      --accent2: #27ae60;
+      --muted: #7f8c8d;
+      --border: #ecf0f1;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Georgia', 'Times New Roman', serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+    header {
+      background: linear-gradient(135deg, #c0392b 0%, #e74c3c 50%, #f39c12 100%);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.5rem;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    header p {
+      font-size: 1.1rem;
+      opacity: 0.9;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 1.5rem 3rem;
+    }
+    .intro {
+      text-align: center;
+      margin-bottom: 2.5rem;
+      font-size: 1.1rem;
+      color: var(--muted);
+    }
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      margin-bottom: 2rem;
+      flex-wrap: wrap;
+    }
+    .stat {
+      text-align: center;
+      padding: 1rem;
+      background: var(--card-bg);
+      border-radius: 12px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      min-width: 120px;
+    }
+    .stat .number {
+      font-size: 2rem;
+      font-weight: bold;
+      color: var(--accent);
+    }
+    .stat .label {
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .card {
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      margin-bottom: 2rem;
+      overflow: hidden;
+      display: grid;
+      grid-template-columns: 200px 1fr;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+    }
+    .card-img {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      background: #fafaf8;
+    }
+    .card-img img {
+      width: 100%;
+      max-width: 180px;
+      height: auto;
+    }
+    .card-body {
+      padding: 1.5rem;
+    }
+    .card-body h2 {
+      font-size: 1.4rem;
+      margin-bottom: 0.75rem;
+      color: var(--text);
+    }
+    .badge {
+      background: var(--accent2);
+      color: white;
+      font-size: 0.75rem;
+      padding: 2px 8px;
+      border-radius: 20px;
+      vertical-align: middle;
+      font-family: sans-serif;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+      margin-bottom: 0.5rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-family: system-ui, sans-serif;
+    }
+    .desc {
+      margin: 1rem 0;
+      font-size: 0.95rem;
+    }
+    .usage {
+      background: #f8f9fa;
+      padding: 0.5rem 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      font-family: system-ui, sans-serif;
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      color: var(--muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+    }
+    @media (max-width: 700px) {
+      .card {
+        grid-template-columns: 1fr;
+      }
+      .card-img {
+        padding: 1.5rem;
+      }
+      header h1 {
+        font-size: 1.8rem;
+      }
+      .stats {
+        gap: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🍅 Les Tomates de Roquefort</h1>
+  <p>Collection de variétés anciennes — Jardin de Roquefort-les-Pins (06)</p>
+</header>
+
+<div class="container">
+  <p class="intro">
+    Variétés anciennes et patrimoniales cultivées en pleine terre dans les Alpes-Maritimes.<br>
+    Semences reproductibles, pas d'hybrides F1.
+  </p>
+  
+  <div class="stats">
+    <div class="stat">
+      <div class="number">11</div>
+      <div class="label">Variétés</div>
+    </div>
+    <div class="stat">
+      <div class="number">5</div>
+      <div class="label">Couleurs</div>
+    </div>
+    <div class="stat">
+      <div class="number">4</div>
+      <div class="label">Pays d'origine</div>
+    </div>
+    <div class="stat">
+      <div class="number">06330</div>
+      <div class="label">Code postal</div>
+    </div>
+  </div>
+
+  
+    <div class="card" id="eva-purple-ball">
+      <div class="card-img">
+        <img src="images/eva-purple-ball.svg" alt="Eva Purple Ball" loading="lazy">
+      </div>
+      <div class="card-body">
+        <h2>🟣 Eva Purple Ball </h2>
+        <div class="meta">
+          <span>📐 Ronde moyenne</span>
+          <span>🎨 Rose-violet</span>
+          <span>⚖️ 110-170 g</span>
+        </div>
+        <div class="meta">
+          <span>⏱️ 70-80 jours</span>
+          <span>🌱 Indéterminé, 1,5-1,8 m</span>
+          <span>🌍 Forêt Noire, Allemagne</span>
+        </div>
+        <p class="desc">Variété ancienne transmise par Eva, une immigrante allemande. Fruit rond et lisse, de couleur rose-violet uniforme. Saveur douce et bien équilibrée entre acidité et sucre, chair juteuse et fondante. Excellente résistance aux maladies, particulièrement adaptée aux climats humides. Production abondante et régulière.</p>
+        <div class="usage">🍽️ <strong>Usages :</strong> Salade, sandwichs, fraîche</div>
+      </div>
+    </div>
+
+    <div class="card" id="rebel-starfighter">
+      <div class="card-img">
+        <img src="images/rebel-starfighter.svg" alt="Rebel Starfighter Peach & Cream" loading="lazy">
+      </div>
+      <div class="card-body">
+        <h2>🍑 Rebel Starfighter Peach & Cream </h2>
+        <div class="meta">
+          <span>📐 Cerise allongée</span>
+          <span>🎨 Bicolore crème et pêche</span>
+          <span>⚖️ 30-60 g</span>
+        </div>
+        <div class="meta">
+          <span>⏱️ 75-80 jours</span>
+          <span>🌱 Indéterminé, 1,5-2 m</span>
+          <span>🌍 États-Unis (sélection artisanale)</span>
+        </div>
+        <p class="desc">Variété « artisan » récente aux couleurs inhabituelles. Petit fruit allongé type prune, bicolore avec des stries crème et pêche/rose. Saveur douce et fruitée, légèrement sucrée avec une faible acidité. Production prolifique en grappes, très décorative au jardin comme dans l'assiette.</p>
+        <div class="usage">🍽️ <strong>Usages :</strong> Apéritif, salade, décoration</div>
+      </div>
+    </div>
+
+    <div class="card" id="poire-jaune">
+      <div class="card-img">
+        <img src="images/poire-jaune.svg" alt="Poire Jaune" loading="lazy">
+      </div>
+      <div class="card-body">
+        <h2>🍐 Poire Jaune </h2>
+        <div class="meta">
+          <span>📐 Cerise en forme de poire</span>
+          <span>🎨 Jaune vif</span>
+          <span>⚖️ 15-30 g</span>
+        </div>
+        <div class="meta">
+          <span>⏱️ 70-80 jours</span>
+          <span>🌱 Indéterminé, 1,8-2,5 m</span>
+          <span>🌍 Europe (catalogues dès 1805)</span>
+        </div>
+        <p class="desc">L'une des plus anciennes variétés de tomates cerises encore cultivées. Petit fruit en forme de poire caractéristique, jaune vif, en longues grappes abondantes. Saveur douce et sucrée, peu acide, avec une note fruitée. Plante très productive, presque envahissante si non taillée. Se ressème facilement.</p>
+        <div class="usage">🍽️ <strong>Usages :</strong> Apéritif, salade, conserves entières, séchage</div>
+      </div>
+    </div>
+
+    <div class="card" id="blue-pitts">
+      <div class="card-img">
+        <img src="images/blue-pitts.svg" alt="Blue Pitts" loading="lazy">
+      </div>
+      <div class="card-body">
+        <h2>🫐 Blue Pitts </h2>
+        <div class="meta">
+          <span>📐 Cerise à cocktail</span>
+          <span>🎨 Bleu-violet et rouge</span>
+          <span>⚖️ 20-50 g</span>
+        </div>
+        <div class="meta">
+          <span>⏱️ 75-85 jours</span>
+          <span>🌱 Indéterminé, 1,5-1,8 m</span>
+          <span>🌍 États-Unis (programme anthocyanes)</span>
+        </div>
+        <p class="desc">Tomate anthocyanique spectaculaire. La peau présente une coloration bleu-violet foncé sur les parties exposées au soleil, avec un fond rouge à maturité. Saveur complexe, légèrement plus acide, avec des notes fruitées. L'exposition au soleil intensifie la couleur bleue. Les anthocyanes sont des antioxydants bénéfiques.</p>
+        <div class="usage">🍽️ <strong>Usages :</strong> Salade, apéritif, décoration</div>
+      </div>
+    </div>
+
+    <div class="card" id="ananas-noire">
+      <div class="card-img">
+        <img src="images/ananas-noire.svg" alt="Ananas Noire" loading="lazy">
+      </div>
+      <div class="card-body">
+        <h2>🖤 Ananas Noire </h2>
+        <div class="meta">
+          <span>📐 Beefsteak</span>
+          <span>🎨 Vert-brun-rouge, chair marbrée multicolore</span>
+          <span>⚖️ 300-500 g</span>
+        </div>
+        <div class="meta">
+          <span>⏱️ 80-95 jours</span>
+          <span>🌱 Indéterminé, 1,5-2 m</span>
+          <span>🌍 Belgique/Europe</span>
+        </div>
+        <p class="desc">Spectaculaire à la coupe ! Gros fruit aplati et côtelé, couleur vert-brun-rouge foncé à l'extérieur. La chair intérieure est marbrée de vert, rouge, jaune et pourpre. Saveur exceptionnelle, complexe et riche, sucrée avec des notes fruitées rappelant l'ananas. Considérée parmi les meilleures tomates gustatives.</p>
+        <div class="usage">🍽️ <strong>Usages :</strong> Dégustation fraîche, carpaccio de tomates</div>
+      </div>
+    </div>
+
+    <div class="card" id="ananas">
+      <div class="card-img">
+        <img src="images/ananas.svg" alt="Ananas" loading="lazy">
+      </div>
+      <div class="card-body">
+        <h2>🍍 Ananas </h2>
+        <div class="meta">
+          <span>📐 Beefsteak</span>
+          <span>🎨 Jaune-orangé strié de rouge</span>
+          <span>⚖️ 400-700 g (jusqu'à 1 kg)</span>
+        </div>
+        <div class="meta">
+          <span>⏱️ 85-95 jours</span>
+          <span>🌱 Indéterminé, 1,5-2 m</span>
+          <span>🌍 Europe (XIXe siècle)</span>
+        </div>
+        <p class="desc">Reine des tomates anciennes ! Très gros fruit aplati et côtelé, jaune-orangé à l'extérieur avec des stries rouges. La chair est marbrée de jaune et rouge en tranches, très charnue avec peu de graines. Saveur remarquablement sucrée et fruitée, très peu acide, avec des notes tropicales évoquant l'ananas.</p>
+        <div class="usage">🍽️ <strong>Usages :</strong> Dégustation fraîche, salade, carpaccio, jus</div>
+      </div>
+    </div>
+
+    <div class="card" id="grosses-tomates">
+      <div class="card-img">
+        <img src="images/grosses-tomates.svg" alt="Grosses Tomates (Russes)" loading="lazy">
+      </div>
+      <div class="card-body">
+        <h2>🔴 Grosses Tomates (Russes) <span class="badge">Grosses Tomates</span></h2>
+        <div class="meta">
+          <span>📐 Beefsteak</span>
+          <span>🎨 Rouge-rose</span>
+          <span>⚖️ 300-700 g (jusqu'à 1 kg)</span>
+        </div>
+        <div class="meta">
+          <span>⏱️ 80-90 jours</span>
+          <span>🌱 Indéterminé, 1,5-2 m</span>
+          <span>🌍 Russie</span>
+        </div>
+        <p class="desc">Variété ancienne russe impressionnante par sa taille. Chair dense et charnue avec peu de jus et peu de graines, tranche bien. Saveur riche et douce, bien équilibrée. Bonne tolérance au froid grâce à ses origines nordiques. Limiter à 3-4 bouquets pour favoriser les gros fruits.</p>
+        <div class="usage">🍽️ <strong>Usages :</strong> Salade en tranches, sandwichs, farcie, sauce</div>
+      </div>
+    </div>
+
+    <div class="card" id="caton">
+      <div class="card-img">
+        <img src="images/caton.svg" alt="Cœur de Bœuf (Caton)" loading="lazy">
+      </div>
+      <div class="card-body">
+        <h2>❤️ Cœur de Bœuf (Caton) <span class="badge">Caton</span></h2>
+        <div class="meta">
+          <span>📐 Cordiforme (en cœur)</span>
+          <span>🎨 Rose-rouge</span>
+          <span>⚖️ 200-500 g</span>
+        </div>
+        <div class="meta">
+          <span>⏱️ 80-85 jours</span>
+          <span>🌱 Indéterminé, 1,5-2 m</span>
+          <span>🌍 Italie (Ligurie)</span>
+        </div>
+        <p class="desc">La vraie Cœur de Bœuf italienne (Cuor di Bue), variété ancienne fixée non hybride. Gros fruit en forme de cœur, chair très dense et fondante, presque crémeuse, avec très peu de graines. Saveur douce et sucrée, peu acide. Peau fine sensible à l'éclatement — arrosage régulier important.</p>
+        <div class="usage">🍽️ <strong>Usages :</strong> Salade en tranches, bruschetta, sauce, farcie</div>
+      </div>
+    </div>
+
+    <div class="card" id="batanaya">
+      <div class="card-img">
+        <img src="images/batanaya.svg" alt="Batanaya" loading="lazy">
+      </div>
+      <div class="card-body">
+        <h2>💗 Batanaya </h2>
+        <div class="meta">
+          <span>📐 Cordiforme (en cœur)</span>
+          <span>🎨 Rose-framboise</span>
+          <span>⚖️ 200-350 g (jusqu'à 500 g)</span>
+        </div>
+        <div class="meta">
+          <span>⏱️ 75-85 jours</span>
+          <span>🌱 Indéterminé, 1,2-1,7 m</span>
+          <span>🌍 Ukraine/Sibérie</span>
+        </div>
+        <p class="desc">Variété sibérienne rustique en forme de cœur. Chair dense, fondante et juteuse, couleur rose-framboise. Saveur douce et sucrée, faiblement acide. Excellente résistance au froid et aux conditions difficiles. Précoce pour un gros fruit. Bonne production même en été court.</p>
+        <div class="usage">🍽️ <strong>Usages :</strong> Salade, fraîche, jus, sauce</div>
+      </div>
+    </div>
+
+    <div class="card" id="zoloty">
+      <div class="card-img">
+        <img src="images/zoloty.svg" alt="Zoloty" loading="lazy">
+      </div>
+      <div class="card-body">
+        <h2>✨ Zoloty </h2>
+        <div class="meta">
+          <span>📐 Moyenne à grosse, ovale</span>
+          <span>🎨 Jaune-orangé doré</span>
+          <span>⚖️ 150-300 g</span>
+        </div>
+        <div class="meta">
+          <span>⏱️ 80-90 jours</span>
+          <span>🌱 Indéterminé, 1,5-1,8 m</span>
+          <span>🌍 Russie (« Doré » en russe)</span>
+        </div>
+        <p class="desc">Variété russe dont le nom signifie « doré ». Fruit ovale-allongé, jaune-orangé brillant. Saveur douce et fruitée, très sucrée avec une acidité très faible, notes miellées. Riche en carotènes. Bonne résistance au froid, production régulière et généreuse.</p>
+        <div class="usage">🍽️ <strong>Usages :</strong> Salade, fraîche, conserves</div>
+      </div>
+    </div>
+
+    <div class="card" id="delice-dor">
+      <div class="card-img">
+        <img src="images/delice-dor.svg" alt="Délice d'Or" loading="lazy">
+      </div>
+      <div class="card-body">
+        <h2>🌟 Délice d'Or </h2>
+        <div class="meta">
+          <span>📐 Ronde moyenne</span>
+          <span>🎨 Jaune d'or lumineux</span>
+          <span>⚖️ 100-200 g</span>
+        </div>
+        <div class="meta">
+          <span>⏱️ 75-85 jours</span>
+          <span>🌱 Indéterminé, 1,2-1,5 m</span>
+          <span>🌍 France</span>
+        </div>
+        <p class="desc">Variété française ancienne à la couleur dorée lumineuse. Saveur douce, sucrée et délicate, avec une acidité très faible. Goût fin et fruité, légèrement miellé. Parfaite pour ceux qui trouvent les tomates rouges trop acides. Bonne productivité, s'adapte bien à la culture en pot.</p>
+        <div class="usage">🍽️ <strong>Usages :</strong> Salade, fraîche, jus</div>
+      </div>
+    </div>
+
+</div>
+
+<footer>
+  <p>🌱 Jardin familial — Roquefort-les-Pins, Alpes-Maritimes</p>
+  <p>Toutes les variétés sont des semences fixées reproductibles</p>
+</footer>
+
+</body>
+</html>

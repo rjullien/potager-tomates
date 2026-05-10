@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <radialGradient id="grad" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" style="stop-color:#F9E79F;stop-opacity:1"/>
+      <stop offset="100%" style="stop-color:#F4D03F;stop-opacity:1"/>
+    </radialGradient>
+    
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="#fafaf8" rx="20"/>
+  
+  <!-- Shadow -->
+  <ellipse cx="200" cy="340" rx="80" ry="15" fill="#00000015"/>
+  
+  <!-- Fruit -->
+  <path d="M200 310 C165 300 145 270 145 240 C145 210 155 190 165 175
+                    C170 160 172 150 172 140 C172 120 180 110 200 110
+                    C220 110 228 120 228 140 C228 150 230 160 235 175
+                    C245 190 255 210 255 240 C255 270 235 300 200 310Z" fill="url(#grad)" />
+  
+  <ellipse cx="185" cy="180" rx="15" ry="20" fill="white" opacity="0.2" />
+  
+  <!-- Stem -->
+  <path d="M195 115 L195 100 Q195 85 200 80 Q205 85 205 100 L205 115" fill="#2E7D32"/>
+              <path d="M180 120 Q190 105 200 115 Q210 105 220 120 Q210 125 200 118 Q190 125 180 120" fill="#388E3C"/>
+  
+  <!-- Label -->
+  <text x="200" y="380" text-anchor="middle" font-family="Georgia, serif" font-size="16" fill="#555">Poire Jaune</text>
+</svg>
