@@ -80,7 +80,7 @@
       margin-bottom: 2rem;
       overflow: hidden;
       display: grid;
-      grid-template-columns: 200px 1fr;
+      grid-template-columns: 250px 1fr;
       transition: transform 0.2s, box-shadow 0.2s;
     }
     .card:hover {
@@ -91,13 +91,15 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      padding: 1rem;
-      background: #fafaf8;
+      padding: 0;
+      background: #f5f5f0;
+      overflow: hidden;
     }
     .card-img img {
       width: 100%;
-      max-width: 180px;
-      height: auto;
+      height: 100%;
+      min-height: 250px;
+      object-fit: cover;
     }
     .card-body {
       padding: 1.5rem;
@@ -136,6 +138,16 @@
       font-size: 0.9rem;
       font-family: system-ui, sans-serif;
     }
+    .credit {
+      margin-top: 0.5rem;
+      font-size: 0.75rem;
+      color: var(--muted);
+      font-family: system-ui, sans-serif;
+    }
+    .credit a {
+      color: var(--muted);
+      text-decoration: underline;
+    }
     footer {
       text-align: center;
       padding: 2rem;
@@ -143,12 +155,36 @@
       font-size: 0.85rem;
       border-top: 1px solid var(--border);
     }
+    .credits-section {
+      margin-top: 3rem;
+      padding: 2rem;
+      background: var(--card-bg);
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    }
+    .credits-section h2 {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      color: var(--muted);
+    }
+    .credits-section ul {
+      list-style: none;
+      font-size: 0.85rem;
+      font-family: system-ui, sans-serif;
+      color: var(--muted);
+    }
+    .credits-section li {
+      margin-bottom: 0.3rem;
+    }
+    .credits-section a {
+      color: var(--accent);
+    }
     @media (max-width: 700px) {
       .card {
         grid-template-columns: 1fr;
       }
       .card-img {
-        padding: 1.5rem;
+        max-height: 250px;
       }
       header h1 {
         font-size: 1.8rem;
@@ -194,7 +230,7 @@
   
     <div class="card" id="eva-purple-ball">
       <div class="card-img">
-        <img src="images/eva-purple-ball.svg" alt="Eva Purple Ball" loading="lazy">
+        <img src="images/eva-purple-ball.jpg" alt="Eva Purple Ball" loading="lazy">
       </div>
       <div class="card-body">
         <h2>🟣 Eva Purple Ball </h2>
@@ -210,12 +246,13 @@
         </div>
         <p class="desc">Variété ancienne transmise par Eva, une immigrante allemande. Fruit rond et lisse, de couleur rose-violet uniforme. Saveur douce et bien équilibrée entre acidité et sucre, chair juteuse et fondante. Excellente résistance aux maladies, particulièrement adaptée aux climats humides. Production abondante et régulière.</p>
         <div class="usage">🍽️ <strong>Usages :</strong> Salade, sandwichs, fraîche</div>
+        <div class="credit">📷 <a href="https://www.amazon.com/Purple-Tomato-Heirloom-Tomato-Great-Yields/dp/B01LY8DDRH" target="_blank" rel="noopener">amazon.com</a></div>
       </div>
     </div>
 
     <div class="card" id="rebel-starfighter">
       <div class="card-img">
-        <img src="images/rebel-starfighter.svg" alt="Rebel Starfighter Peach & Cream" loading="lazy">
+        <img src="images/rebel-starfighter.jpg" alt="Rebel Starfighter Peach & Cream" loading="lazy">
       </div>
       <div class="card-body">
         <h2>🍑 Rebel Starfighter Peach & Cream </h2>
@@ -231,12 +268,13 @@
         </div>
         <p class="desc">Variété « artisan » récente aux couleurs inhabituelles. Petit fruit allongé type prune, bicolore avec des stries crème et pêche/rose. Saveur douce et fruitée, légèrement sucrée avec une faible acidité. Production prolifique en grappes, très décorative au jardin comme dans l'assiette.</p>
         <div class="usage">🍽️ <strong>Usages :</strong> Apéritif, salade, décoration</div>
+        <div class="credit">📷 <a href="https://www.tomatorevolution.co.uk/store/REBEL-STARFIGHTER-KAYLEIGH-ANN-p633761960" target="_blank" rel="noopener">tomatorevolution.co.uk</a></div>
       </div>
     </div>
 
     <div class="card" id="poire-jaune">
       <div class="card-img">
-        <img src="images/poire-jaune.svg" alt="Poire Jaune" loading="lazy">
+        <img src="images/poire-jaune.jpg" alt="Poire Jaune" loading="lazy">
       </div>
       <div class="card-body">
         <h2>🍐 Poire Jaune </h2>
@@ -252,12 +290,13 @@
         </div>
         <p class="desc">L'une des plus anciennes variétés de tomates cerises encore cultivées. Petit fruit en forme de poire caractéristique, jaune vif, en longues grappes abondantes. Saveur douce et sucrée, peu acide, avec une note fruitée. Plante très productive, presque envahissante si non taillée. Se ressème facilement.</p>
         <div class="usage">🍽️ <strong>Usages :</strong> Apéritif, salade, conserves entières, séchage</div>
+        <div class="credit">📷 <a href="https://cloversgarden.com/products/yellow-pear-tomato-plants-two-live-garden-plants-non-gmo-pear-heirloom-indeterminate" target="_blank" rel="noopener">cloversgarden.com</a></div>
       </div>
     </div>
 
     <div class="card" id="blue-pitts">
       <div class="card-img">
-        <img src="images/blue-pitts.svg" alt="Blue Pitts" loading="lazy">
+        <img src="images/blue-pitts.jpg" alt="Blue Pitts" loading="lazy">
       </div>
       <div class="card-body">
         <h2>🫐 Blue Pitts </h2>
@@ -273,12 +312,13 @@
         </div>
         <p class="desc">Tomate anthocyanique spectaculaire. La peau présente une coloration bleu-violet foncé sur les parties exposées au soleil, avec un fond rouge à maturité. Saveur complexe, légèrement plus acide, avec des notes fruitées. L'exposition au soleil intensifie la couleur bleue. Les anthocyanes sont des antioxydants bénéfiques.</p>
         <div class="usage">🍽️ <strong>Usages :</strong> Salade, apéritif, décoration</div>
+        <div class="credit">📷 <a href="https://www.ecrater.com/p/36339882/indigo-rose-purple-blue-tomato" target="_blank" rel="noopener">ecrater.com</a></div>
       </div>
     </div>
 
     <div class="card" id="ananas-noire">
       <div class="card-img">
-        <img src="images/ananas-noire.svg" alt="Ananas Noire" loading="lazy">
+        <img src="images/ananas-noire.jpg" alt="Ananas Noire" loading="lazy">
       </div>
       <div class="card-body">
         <h2>🖤 Ananas Noire </h2>
@@ -294,12 +334,13 @@
         </div>
         <p class="desc">Spectaculaire à la coupe ! Gros fruit aplati et côtelé, couleur vert-brun-rouge foncé à l'extérieur. La chair intérieure est marbrée de vert, rouge, jaune et pourpre. Saveur exceptionnelle, complexe et riche, sucrée avec des notes fruitées rappelant l'ananas. Considérée parmi les meilleures tomates gustatives.</p>
         <div class="usage">🍽️ <strong>Usages :</strong> Dégustation fraîche, carpaccio de tomates</div>
+        <div class="credit">📷 <a href="https://www.etsy.com/in-en/market/ananas_noire_tomato" target="_blank" rel="noopener">etsy.com</a></div>
       </div>
     </div>
 
     <div class="card" id="ananas">
       <div class="card-img">
-        <img src="images/ananas.svg" alt="Ananas" loading="lazy">
+        <img src="images/ananas.jpg" alt="Ananas" loading="lazy">
       </div>
       <div class="card-body">
         <h2>🍍 Ananas </h2>
@@ -315,12 +356,13 @@
         </div>
         <p class="desc">Reine des tomates anciennes ! Très gros fruit aplati et côtelé, jaune-orangé à l'extérieur avec des stries rouges. La chair est marbrée de jaune et rouge en tranches, très charnue avec peu de graines. Saveur remarquablement sucrée et fruitée, très peu acide, avec des notes tropicales évoquant l'ananas.</p>
         <div class="usage">🍽️ <strong>Usages :</strong> Dégustation fraîche, salade, carpaccio, jus</div>
+        <div class="credit">📷 <a href="https://merakiseeds.com/ananas-beefsteak-tomato" target="_blank" rel="noopener">merakiseeds.com</a></div>
       </div>
     </div>
 
     <div class="card" id="grosses-tomates">
       <div class="card-img">
-        <img src="images/grosses-tomates.svg" alt="Grosses Tomates (Russes)" loading="lazy">
+        <img src="images/grosses-tomates.jpg" alt="Grosses Tomates (Russes)" loading="lazy">
       </div>
       <div class="card-body">
         <h2>🔴 Grosses Tomates (Russes) <span class="badge">Grosses Tomates</span></h2>
@@ -336,12 +378,13 @@
         </div>
         <p class="desc">Variété ancienne russe impressionnante par sa taille. Chair dense et charnue avec peu de jus et peu de graines, tranche bien. Saveur riche et douce, bien équilibrée. Bonne tolérance au froid grâce à ses origines nordiques. Limiter à 3-4 bouquets pour favoriser les gros fruits.</p>
         <div class="usage">🍽️ <strong>Usages :</strong> Salade en tranches, sandwichs, farcie, sauce</div>
+        <div class="credit">📷 <a href="https://www.amazon.com/Beefsteak-Heirloom-200-Indeterminate-Pollinated/dp/B0CVSH6QVX" target="_blank" rel="noopener">amazon.com</a></div>
       </div>
     </div>
 
     <div class="card" id="caton">
       <div class="card-img">
-        <img src="images/caton.svg" alt="Cœur de Bœuf (Caton)" loading="lazy">
+        <img src="images/caton.jpg" alt="Cœur de Bœuf (Caton)" loading="lazy">
       </div>
       <div class="card-body">
         <h2>❤️ Cœur de Bœuf (Caton) <span class="badge">Caton</span></h2>
@@ -357,12 +400,13 @@
         </div>
         <p class="desc">La vraie Cœur de Bœuf italienne (Cuor di Bue), variété ancienne fixée non hybride. Gros fruit en forme de cœur, chair très dense et fondante, presque crémeuse, avec très peu de graines. Saveur douce et sucrée, peu acide. Peau fine sensible à l'éclatement — arrosage régulier important.</p>
         <div class="usage">🍽️ <strong>Usages :</strong> Salade en tranches, bruschetta, sauce, farcie</div>
+        <div class="credit">📷 <a href="https://www.istockphoto.com/photos/heart-shaped-tomato" target="_blank" rel="noopener">istockphoto.com</a></div>
       </div>
     </div>
 
     <div class="card" id="batanaya">
       <div class="card-img">
-        <img src="images/batanaya.svg" alt="Batanaya" loading="lazy">
+        <img src="images/batanaya.jpg" alt="Batanaya" loading="lazy">
       </div>
       <div class="card-body">
         <h2>💗 Batanaya </h2>
@@ -378,12 +422,13 @@
         </div>
         <p class="desc">Variété sibérienne rustique en forme de cœur. Chair dense, fondante et juteuse, couleur rose-framboise. Saveur douce et sucrée, faiblement acide. Excellente résistance au froid et aux conditions difficiles. Précoce pour un gros fruit. Bonne production même en été court.</p>
         <div class="usage">🍽️ <strong>Usages :</strong> Salade, fraîche, jus, sauce</div>
+        <div class="credit">📷 <a href="https://organicseeds.top/shop/12647/desc/batyana-pink-organic-tomato" target="_blank" rel="noopener">organicseeds.top</a></div>
       </div>
     </div>
 
     <div class="card" id="zoloty">
       <div class="card-img">
-        <img src="images/zoloty.svg" alt="Zoloty" loading="lazy">
+        <img src="images/zoloty.jpg" alt="Zoloty" loading="lazy">
       </div>
       <div class="card-body">
         <h2>✨ Zoloty </h2>
@@ -399,12 +444,13 @@
         </div>
         <p class="desc">Variété russe dont le nom signifie « doré ». Fruit ovale-allongé, jaune-orangé brillant. Saveur douce et fruitée, très sucrée avec une acidité très faible, notes miellées. Riche en carotènes. Bonne résistance au froid, production régulière et généreuse.</p>
         <div class="usage">🍽️ <strong>Usages :</strong> Salade, fraîche, conserves</div>
+        <div class="credit">📷 <a href="https://www.etsy.com/listing/649785441/yellow-tomato-golden-rain-zolotoy-dozd" target="_blank" rel="noopener">etsy.com</a></div>
       </div>
     </div>
 
     <div class="card" id="delice-dor">
       <div class="card-img">
-        <img src="images/delice-dor.svg" alt="Délice d'Or" loading="lazy">
+        <img src="images/delice-dor.jpg" alt="Délice d'Or" loading="lazy">
       </div>
       <div class="card-body">
         <h2>🌟 Délice d'Or </h2>
@@ -420,9 +466,29 @@
         </div>
         <p class="desc">Variété française ancienne à la couleur dorée lumineuse. Saveur douce, sucrée et délicate, avec une acidité très faible. Goût fin et fruité, légèrement miellé. Parfaite pour ceux qui trouvent les tomates rouges trop acides. Bonne productivité, s'adapte bien à la culture en pot.</p>
         <div class="usage">🍽️ <strong>Usages :</strong> Salade, fraîche, jus</div>
+        <div class="credit">📷 <a href="https://www.summerwindsnursery.com/ca/plants/edibles/tomatoes/heirloom/" target="_blank" rel="noopener">summerwindsnursery.com</a></div>
       </div>
     </div>
 
+
+  <div class="credits-section">
+    <h2>📷 Crédits photos</h2>
+    <p style="margin-bottom: 1rem; font-size: 0.85rem;">Photos utilisées à titre illustratif. Sources et droits appartiennent à leurs auteurs respectifs.</p>
+    <ul>
+      <li><strong>Eva Purple Ball</strong> — <a href="https://www.amazon.com/Purple-Tomato-Heirloom-Tomato-Great-Yields/dp/B01LY8DDRH" target="_blank" rel="noopener">amazon.com</a></li>
+<li><strong>Rebel Starfighter Peach & Cream</strong> — <a href="https://www.tomatorevolution.co.uk/store/REBEL-STARFIGHTER-KAYLEIGH-ANN-p633761960" target="_blank" rel="noopener">tomatorevolution.co.uk</a></li>
+<li><strong>Poire Jaune</strong> — <a href="https://cloversgarden.com/products/yellow-pear-tomato-plants-two-live-garden-plants-non-gmo-pear-heirloom-indeterminate" target="_blank" rel="noopener">cloversgarden.com</a></li>
+<li><strong>Blue Pitts</strong> — <a href="https://www.ecrater.com/p/36339882/indigo-rose-purple-blue-tomato" target="_blank" rel="noopener">ecrater.com</a></li>
+<li><strong>Ananas Noire</strong> — <a href="https://www.etsy.com/in-en/market/ananas_noire_tomato" target="_blank" rel="noopener">etsy.com</a></li>
+<li><strong>Ananas</strong> — <a href="https://merakiseeds.com/ananas-beefsteak-tomato" target="_blank" rel="noopener">merakiseeds.com</a></li>
+<li><strong>Grosses Tomates (Russes)</strong> — <a href="https://www.amazon.com/Beefsteak-Heirloom-200-Indeterminate-Pollinated/dp/B0CVSH6QVX" target="_blank" rel="noopener">amazon.com</a></li>
+<li><strong>Cœur de Bœuf (Caton)</strong> — <a href="https://www.istockphoto.com/photos/heart-shaped-tomato" target="_blank" rel="noopener">istockphoto.com</a></li>
+<li><strong>Batanaya</strong> — <a href="https://organicseeds.top/shop/12647/desc/batyana-pink-organic-tomato" target="_blank" rel="noopener">organicseeds.top</a></li>
+<li><strong>Zoloty</strong> — <a href="https://www.etsy.com/listing/649785441/yellow-tomato-golden-rain-zolotoy-dozd" target="_blank" rel="noopener">etsy.com</a></li>
+<li><strong>Délice d'Or</strong> — <a href="https://www.summerwindsnursery.com/ca/plants/edibles/tomatoes/heirloom/" target="_blank" rel="noopener">summerwindsnursery.com</a></li>
+
+    </ul>
+  </div>
 </div>
 
 <footer>
