@@ -1,6 +1,6 @@
-# 🍅 Les Tomates de Roquefort-les-Pins
+# 🍅 Les Tomates du Potager
 
-Collection de variétés anciennes cultivées au jardin familial de Roquefort-les-Pins (06330, Alpes-Maritimes).
+Collection de variétés anciennes cultivées au jardin familial dans le sud de la France.
 
 ## 🌐 Voir le site
 
@@ -24,7 +24,7 @@ Collection de variétés anciennes cultivées au jardin familial de Roquefort-le
 
 ## 📍 Localisation
 
-Roquefort-les-Pins, Alpes-Maritimes (06330) — Zone USDA 9a, climat méditerranéen.
+Sud de la France — Zone USDA 9a, climat méditerranéen.
 
 ## 📝 Notes
 
