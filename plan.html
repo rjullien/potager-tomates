@@ -178,10 +178,12 @@
         <text x="275" y="430" text-anchor="start" font-size="7" fill="#ff8f00">Poire J.</text>
         <text x="275" y="493" text-anchor="start" font-size="7" fill="#b71c1c">Charret</text>
         
-        <!-- === LIGNE 3 : ESPACE LIBRE (séparation) === -->
-        <rect x="320" y="195" width="80" height="350" fill="#f9fbe7" stroke="#c5e1a5" stroke-width="1" rx="6" stroke-dasharray="4,3"/>
-        <text x="360" y="212" text-anchor="middle" font-size="8" fill="#689f38">Ligne 3</text>
-        <text x="360" y="380" text-anchor="middle" font-size="9" fill="#689f38" font-style="italic">(libre)</text>
+        <!-- === LIGNE 3 : 1 Charret === -->
+        <rect x="320" y="195" width="80" height="350" fill="#fffde7" stroke="#a5d6a7" stroke-width="1.5" rx="6"/>
+        <text x="360" y="212" text-anchor="middle" font-size="8" fill="#5d4037">Ligne 3</text>
+        <!-- 1 Charret -->
+        <circle cx="360" cy="250" r="12" fill="#e53935" stroke="#c62828" stroke-width="1"/>
+        <text x="360" y="280" text-anchor="middle" font-size="7" fill="#b71c1c">Charret</text>
         
         <!-- === LIGNE 4 : BUTTERNUTS en haut + CERISIER + moitié libre en bas === -->
         <rect x="430" y="195" width="80" height="350" fill="#fff3e0" stroke="#e65100" stroke-width="1.5" rx="6"/>
@@ -196,9 +198,11 @@
         <path d="M453 340 Q459 332 456 322" stroke="#388e3c" fill="none" stroke-width="2"/>
         <text x="470" y="365" text-anchor="middle" font-size="7" fill="#e65100">Butternuts ×2</text>
         <text x="470" y="375" text-anchor="middle" font-size="7" fill="#bf360c">2025</text>
-        <!-- Moitié libre en bas -->
-        <rect x="435" y="390" width="70" height="150" fill="#f9fbe7" stroke="#c5e1a5" stroke-width="1" rx="4" stroke-dasharray="4,3"/>
-        <text x="470" y="470" text-anchor="middle" font-size="8" fill="#689f38" font-style="italic">(libre)</text>
+        <!-- Moitié libre en bas → 3 Délice d'Or -->
+        <circle cx="470" cy="410" r="14" fill="#fdd835" stroke="#f9a825" stroke-width="1"/>
+        <circle cx="470" cy="460" r="14" fill="#fdd835" stroke="#f9a825" stroke-width="1"/>
+        <circle cx="470" cy="510" r="14" fill="#fdd835" stroke="#f9a825" stroke-width="1"/>
+        <text x="470" y="535" text-anchor="middle" font-size="7" fill="#f57f17">Délice d'Or ×3</text>
 
         <!-- CERISIER — hors du carré, juste à droite, entre butternuts et libre -->
         <circle cx="560" cy="400" r="30" fill="#2e7d32" opacity="0.6"/>
@@ -376,10 +380,10 @@
     
     <div class="legende">
       <div class="legende-item"><div class="legende-dot" style="background:#2e7d32"></div> Cerisier (hors carré, côté ligne 4)</div>
-      <div class="legende-item"><div class="legende-dot" style="background:#fdd835"></div> Délice d'Or (×6)</div>
+      <div class="legende-item"><div class="legende-dot" style="background:#fdd835"></div> Délice d'Or (×9)</div>
       <div class="legende-item"><div class="legende-dot" style="background:#ffca28"></div> Poire Jaune (×2)</div>
       <div class="legende-item"><div class="legende-dot" style="background:#5c6bc0"></div> Blue Pitts (×1)</div>
-      <div class="legende-item"><div class="legende-dot" style="background:#e53935"></div> Charret (×1)</div>
+      <div class="legende-item"><div class="legende-dot" style="background:#e53935"></div> Charret (×2)</div>
       <div class="legende-item"><div class="legende-dot" style="background:#ff9800"></div> Courge Butternut (×2) — Carré potager</div>
       <div class="legende-item"><div class="legende-dot" style="background:#ff9800; border: 2px solid #e65100"></div> Courges (×11) — Ancien cerisier</div>
       <div class="legende-item"><div class="legende-dot" style="background:#f9a825; border: 2px solid #c62828"></div> Rebel Starfighter (×2) — Ancien cerisier</div>
@@ -403,7 +407,7 @@
       <div class="photo-grid">
         <div class="photo-card">
           <img src="images/delice-dor.jpg" alt="Tomate Délice d'Or">
-          <div class="caption">🟡 Délice d'Or<div class="sub">Ronde jaune dorée × 6</div></div>
+          <div class="caption">🟡 Délice d'Or<div class="sub">Ronde jaune dorée × 9</div></div>
         </div>
         <div class="photo-card">
           <img src="images/poire-jaune.jpg" alt="Tomate Poire Jaune">
@@ -441,8 +445,8 @@
       <strong>CARRÉ POTAGER :</strong><br>
       • <strong>Ligne 1</strong> : 3 Délice d'Or, 1 Poire Jaune, 1 Blue Pitts<br>
       • <strong>Ligne 2</strong> : 3 Délice d'Or, 1 Poire Jaune, 1 Charret<br>
-      • <strong>Ligne 3</strong> : libre (séparation tomates / courges)<br>
-      • <strong>Ligne 4</strong> : 2 Butternuts (2025) + libre en bas<br>
+      • <strong>Ligne 3</strong> : 1 Charret<br>
+      • <strong>Ligne 4</strong> : 2 Butternuts (2025) + 3 Délice d'Or<br>
       • <strong>Cerisier</strong> — hors du carré, juste à côté de la ligne 4<br>
       <br>
       <strong>CARRÉ ANCIEN CERISIER :</strong><br>
