@@ -1,0 +1,16 @@
+# Les Tomates du Potager
+
+> Les tomates du jardin de Roquefort-les-Pins 🍅 — site de documentation des variétés de tomates.
+
+## Description
+Fiches détaillées des variétés de tomates cultivées au potager de Roquefort-les-Pins : description de chaque variété, photos, crédits sources.
+
+## Contenu
+- `index.html` — fiches des variétés (Eva Purple Ball, Rebel Starfighter, Poire Jaune, Blue Pitts, Ananas Noire, Ananas, Grosses Tomates, Cœur de Bœuf/Caton, Batanaya, Zoloty, Délice d'Or)
+- `varietes.json` — données structurées des variétés
+- `plan.html` — plan du potager
+- `credits.json` — sources des photos
+
+## À savoir pour les agents
+- Site 100% statique (GitHub Pages), lisible au premier chargement
+- Données structurées dans `varietes.json` (format JSON)
