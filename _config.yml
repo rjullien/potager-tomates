@@ -8,3 +8,4 @@ markdown: kramdown
 # Build settings
 plugins:
   - jekyll-seo-tag
+  - jekyll-sitemap
